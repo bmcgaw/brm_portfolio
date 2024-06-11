@@ -3,3 +3,35 @@
   margin: 0;
   padding: 0;
 }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation */
+.nav-item {
+  margin: auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark {
+  background-color: #343a40; /* Dark grey background color */
+}
