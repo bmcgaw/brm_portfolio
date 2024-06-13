@@ -15,84 +15,111 @@
       rel="stylesheet"
     />
     <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <section id="About">
-      <nav class="navbar navbar-expand-md bg-light fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" id="brand" href="#">Your Logo</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <div class="gradient-background"></div>
+    <nav class="navbar navbar-expand-md bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" id="brand" href="#">Your Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#MiniSites">Sites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav
+      class="d-flex flex-column justify-content-center align-items-center"
+      id="sidebar-nav"
+    >
+      <a
+        class="navbar-brand nav-link"
+        id="vertical-brand"
+        style="margin-right: 0px"
+        href="#"
+        >BRM</a
+      >
+      <a class="nav-link sidebar-link" href="Home"
+        ><i class="bi bi-house-door-fill"></i
+      ></a>
+      <a class="nav-link sidebar-link" href="Skills"
+        ><i class="bi bi-tools"></i
+      ></a>
+      <a class="nav-link sidebar-link" href="Projects"
+        ><i class="bi bi-folder-fill"></i
+      ></a>
+      <a class="nav-link sidebar-link" href="MiniSites"
+        ><i class="bi bi-globe"></i
+      ></a>
+      <a class="nav-link sidebar-link" href="Blog"
+        ><i class="bi bi-book-fill"></i
+      ></a>
+      <a class="nav-link sidebar-link" href="Contact"
+        ><i class="bi bi-envelope-fill"></i
+      ></a>
+    </nav>
+    <section id="Home">
+      <div class="container-fluid" id="homeContentContainer">
+        <img
+          src="/images/beach.png"
+          alt="Profile Picture"
+          class="profile-image"
+        />
+        <div class="d-flex flex-column align-items-center" id="nameAndTitle">
+          <h1 class="mb-2 display-3">Brian McGaw</h1>
+          <h2 class="mb-3 display-6">Web Developer</h2>
+        </div>
+        <div class="home-content">
+          <p class="rounded" id="aboutMe">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Repellendus illo totam, ipsam sint quas, aperiam doloremque alias
+            officia corrupti in qui, ab quisquam enim. Veniam dolor est at
+            eveniet sed.
+          </p>
           <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
+            class="d-flex w-100 justify-content-evenly mt-4"
+            id="home-cta-buttons"
           >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sites</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
+            <button class="home-button">Download</button>
+            <button class="home-button">Bug Tracker</button>
           </div>
         </div>
-      </nav>
-      <nav
-        class="d-flex flex-column justify-content-center align-items-center"
-        id="sidebar-nav"
-      >
-        <a
-          class="navbar-brand nav-link"
-          id="vertical-brand"
-          style="margin-right: 0px"
-          href="#"
-          >BRM</a
-        >
-        <a class="nav-link sidebar-link" href=""
-          ><i class="bi bi-house-door-fill"></i
-        ></a>
-        <a class="nav-link sidebar-link" href=""><i class="bi bi-tools"></i></a>
-        <a class="nav-link sidebar-link" href=""
-          ><i class="bi bi-folder-fill"></i
-        ></a>
-        <a class="nav-link sidebar-link" href=""><i class="bi bi-globe"></i></a>
-        <a class="nav-link sidebar-link" href=""
-          ><i class="bi bi-book-fill"></i
-        ></a>
-        <a class="nav-link sidebar-link" href=""
-          ><i class="bi bi-envelope-fill"></i
-        ></a>
-      </nav>
+      </div>
     </section>
     <section id="Skills"></section>
     <section id="Projects"></section>
