@@ -2,7 +2,7 @@
 const icon = document.getElementsByClassName("navbar-toggler-icon")[0];
 
 icon.addEventListener("click", () => {
-  icon.classList.toggle("active-icon");
+  icon.classList.toggle("active-toggler-icon");
 });
 
 // Slide in home page content
@@ -12,4 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   homePageContent.classList.add("slide-in");
   profileImage.classList.add("slide-in");
+});
+
+const navbar = document.querySelector("#navbarNav");
+
+navbar.addEventListener("click", () => {
+  const navActive = document.querySelector(".navbar-toggler-icon");
+
+  navbar.classList.toggle("show");
+  navActive.classList.remove("active-toggler-icon");
 });

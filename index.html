@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <div class="gradient-background"></div>
+    <!-- Top navbar -->
     <nav class="navbar navbar-expand-md bg-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" id="brand" href="#">Your Logo</a>
+        <a class="navbar-brand" id="brand" href="#">BRM</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,13 +36,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#Home">Home</a>
+              <a class="nav-link" id="top-nav-home" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Skills">Skills</a>
@@ -63,18 +60,13 @@
         </div>
       </div>
     </nav>
+    <!-- Vertical left navbar -->
     <nav
       class="d-flex flex-column justify-content-center align-items-center"
-      id="sidebar-nav"
+      id="sidebarNav"
     >
-      <a
-        class="navbar-brand nav-link"
-        id="vertical-brand"
-        style="margin-right: 0px"
-        href="#"
-        >BRM</a
-      >
-      <a class="nav-link sidebar-link" href="Home"
+      <a class="navbar-brand nav-link" id="verticalBrand" href="#">BRM</a>
+      <a class="nav-link sidebar-link" id="sideNavHome" href="#"
         ><i class="bi bi-house-door-fill"></i
       ></a>
       <a class="nav-link sidebar-link" href="Skills"
@@ -93,17 +85,25 @@
         ><i class="bi bi-envelope-fill"></i
       ></a>
     </nav>
-    <section id="Home">
-      <div class="container-fluid" id="homeContentContainer">
-        <img
+    <!-- Home content section -->
+    <section id="Home" class="hero-section">
+      <div class="container" id="homeContentContainer">
+        <h1 class="mb-2">Brian McGaw</h1>
+        <h2 class="mb-3">Web Developer</h2>
+        <!--    <img
           src="/images/beach.png"
           alt="Profile Picture"
           class="profile-image"
-        />
-        <div class="d-flex flex-column align-items-center" id="nameAndTitle">
-          <h1 class="mb-2 display-3">Brian McGaw</h1>
-          <h2 class="mb-3 display-6">Web Developer</h2>
+        /> -->
+        <div class="d-flex gap-4">
+          <a class="linkedin-github" href="">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a class="linkedin-github" href="">
+            <i class="bi bi-github"></i>
+          </a>
         </div>
+
         <div class="home-content">
           <p class="rounded" id="aboutMe">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -121,11 +121,119 @@
         </div>
       </div>
     </section>
-    <section id="Skills"></section>
-    <section id="Projects"></section>
-    <section id="MiniSites"></section>
-    <section id="Blog"></section>
-    <section id="Contact"></section>
+
+    <!-- Skills section content -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+          odio. Praesent libero. Sed cursus ante dapibus diam.
+        </p>
+        <h3>Skills</h3>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <i class="bi bi-code-slash"></i> HTML
+          </li>
+          <li class="list-inline-item"><i class="bi bi-file-code"></i> CSS</li>
+          <li class="list-inline-item">
+            <i class="bi bi-file-code"></i> JavaScript
+          </li>
+          <!-- Add more skills as needed -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="project1.jpg" class="card-img-top" alt="Project 1" />
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Brief description of the project.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat for more projects -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MiniSites Section -->
+    <section id="minisites" class="minisites-section">
+      <div class="container">
+        <h2>MiniSites</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="minisite1.jpg" class="card-img-top" alt="MiniSite 1" />
+              <div class="card-body">
+                <h5 class="card-title">MiniSite 1</h5>
+                <p class="card-text">Brief description of the mini-site.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat for more mini-sites -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+      <div class="container">
+        <h2>Blog</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="blog1.jpg" class="card-img-top" alt="Blog 1" />
+              <div class="card-body">
+                <h5 class="card-title">Blog Post 1</h5>
+                <p class="card-text">Brief description of the blog post.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat for more blog posts -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Contact</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center py-3">
+      <div class="container">
+        <p>&copy; 2024 Brian McGaw. All Rights Reserved.</p>
+      </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
