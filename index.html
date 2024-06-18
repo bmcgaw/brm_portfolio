@@ -18,13 +18,30 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <!-- Top navbar -->
+    <!-- Top Navigation -->
     <nav class="navbar navbar-expand-md bg-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" id="brand" href="#">BRM</a>
+        <a class="linkedin-github" href="">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a class="linkedin-github" href="https://github.com/bmcgaw">
+          <i class="bi bi-github"></i>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,16 +56,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" id="top-nav-home" href="#">Home</a>
+              <a class="nav-link" id="top-nav-home" href="#Home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Skills">Skills</a>
+              <a class="nav-link" href="#About">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#MiniSites">Sites</a>
+              <a class="nav-link" href="#JavascriptProjects"
+                >Javascript Projects</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Blog">Blog</a>
@@ -60,149 +79,308 @@
         </div>
       </div>
     </nav>
-    <!-- Vertical left navbar -->
+
+    <!-- Sidebar Navigation -->
     <nav
-      class="d-flex flex-column justify-content-center align-items-center"
+      class="d-flex flex-column justify-content-center align-items-center bg-light"
       id="sidebarNav"
     >
       <a class="navbar-brand nav-link" id="verticalBrand" href="#">BRM</a>
-      <a class="nav-link sidebar-link" id="sideNavHome" href="#"
-        ><i class="bi bi-house-door-fill"></i
+      <a class="nav-link sidebar-link" href="#Home"
+        ><i class="bi bi-house-door-fill Home"></i
       ></a>
-      <a class="nav-link sidebar-link" href="Skills"
-        ><i class="bi bi-tools"></i
+      <a class="nav-link sidebar-link" href="About"
+        ><i class="bi bi-tools About"></i
       ></a>
       <a class="nav-link sidebar-link" href="Projects"
-        ><i class="bi bi-folder-fill"></i
+        ><i class="bi bi-folder-fill Projects"></i
       ></a>
-      <a class="nav-link sidebar-link" href="MiniSites"
-        ><i class="bi bi-globe"></i
+      <a class="nav-link sidebar-link" href="JavascriptProjects"
+        ><i class="bi bi-globe JavascriptProjects"></i
       ></a>
       <a class="nav-link sidebar-link" href="Blog"
-        ><i class="bi bi-book-fill"></i
+        ><i class="bi bi-book-fill Blog"></i
       ></a>
       <a class="nav-link sidebar-link" href="Contact"
-        ><i class="bi bi-envelope-fill"></i
+        ><i class="bi bi-envelope-fill Contact"></i
       ></a>
     </nav>
+
     <!-- Home content section -->
     <section id="Home" class="hero-section">
       <div class="container" id="homeContentContainer">
-        <h1 class="mb-2">Brian McGaw</h1>
-        <h2 class="mb-3">Web Developer</h2>
-        <!--    <img
-          src="/images/beach.png"
-          alt="Profile Picture"
-          class="profile-image"
-        /> -->
-        <div class="d-flex gap-4">
-          <a class="linkedin-github" href="">
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <a class="linkedin-github" href="">
-            <i class="bi bi-github"></i>
-          </a>
+        <div
+          class="name d-flex flex-column justify-content-center align-items-center"
+        >
+          <span class="first-name">BRIAN</span>
+          <span class="last-name">MCGAW</span>
         </div>
-
+        <h1 class="mb-3">Software Developer</h1>
         <div class="home-content">
-          <p class="rounded" id="aboutMe">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repellendus illo totam, ipsam sint quas, aperiam doloremque alias
-            officia corrupti in qui, ab quisquam enim. Veniam dolor est at
-            eveniet sed.
+          <p class="mb-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quis
+            delectus, nobis soluta sed iusto iure ipsam, praesentium sunt as.
           </p>
-          <div
-            class="d-flex w-100 justify-content-evenly mt-4"
-            id="home-cta-buttons"
-          >
-            <button class="home-button">Download</button>
-            <button class="home-button">Bug Tracker</button>
-          </div>
+          <button class="home-button">Download CV</button>
         </div>
+      </div>
+      <div class="social-links d-none">
+        <a class="linkedin-github" href="">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a class="linkedin-github" href="">
+          <i class="bi bi-github"></i>
+        </a>
       </div>
     </section>
 
-    <!-- Skills section content -->
-    <section id="about" class="about-section">
+    <!-- About Section -->
+    <section id="About" class="about-section">
       <div class="container">
         <h2>About Me</h2>
-        <p>
+        <p class="about-me">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
           odio. Praesent libero. Sed cursus ante dapibus diam.
         </p>
-        <h3>Skills</h3>
-        <ul class="list-inline">
+        <h3 class="mt-5 mb-4">Skills</h3>
+        <ul class="list-inline d-flex flex-wrap gap-5 fs-4">
           <li class="list-inline-item">
-            <i class="bi bi-code-slash"></i> HTML
+            <i class="devicon devicon-html5-plain"></i> HTML
           </li>
-          <li class="list-inline-item"><i class="bi bi-file-code"></i> CSS</li>
           <li class="list-inline-item">
-            <i class="bi bi-file-code"></i> JavaScript
+            <i class="devicon devicon-css3-plain"></i> CSS
           </li>
-          <!-- Add more skills as needed -->
+          <li class="list-inline-item">
+            <i class="devicon devicon-javascript-plain"></i> JavaScript
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon devicon-csharp-plain"></i> C#
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon devicon-bootstrap-plain"></i> Bootstrap
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon devicon-dotnetcore-plain"></i> ASP.NET
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon devicon-tailwindcss-original"></i> Tailwind
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon devicon-azuresqldatabase-plain"></i> SQL
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon devicon-github-original"></i> GitHub
+          </li>
         </ul>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-      <div class="container">
-        <h2>Projects</h2>
+    <section id="Projects" class="projects-section">
+      <div class="container" id="projectsContentContainer">
+        <h2>.NET Projects</h2>
         <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="project1.jpg" class="card-img-top" alt="Project 1" />
+          <div class="col-md-4 mb-4">
+            <div class="card rounded">
+              <img
+                src="/images/beach.png"
+                class="card-img-top"
+                alt="Project 1"
+              />
               <div class="card-body">
                 <h5 class="card-title">Project 1</h5>
-                <p class="card-text">Brief description of the project.</p>
+                <p class="card-text">Description</p>
+                <ul class="list-unstyled">
+                  Tools Used
+                  <li class="fas fa-code">HTML</li>
+                  <li class="fas fa-css3-alt">CSS</li>
+                  <li class="fab fa-js">Javascript</li>
+                </ul>
+                <a href="#Home" class="btn btn-primary">Demo</a>
+                <a href="#About" class="btn btn-secondary">Code</a>
               </div>
             </div>
           </div>
-          <!-- Repeat for more projects -->
+          <div class="col-md-4 mb-4">
+            <div class="card rounded">
+              <img
+                src="/images/beach.png"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Description</p>
+                <ul class="list-unstyled">
+                  Tools Used
+                  <li class="fas fa-code">HTML</li>
+                  <li class="fas fa-css3-alt">CSS</li>
+                  <li class="fab fa-js">Javascript</li>
+                </ul>
+                <a href="#Home" class="btn btn-primary">Demo</a>
+                <a href="#About" class="btn btn-secondary">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card rounded">
+              <img
+                src="/images/beach.png"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Description</p>
+                <ul class="list-unstyled">
+                  Tools Used
+                  <li class="fas fa-code">HTML</li>
+                  <li class="fas fa-css3-alt">CSS</li>
+                  <li class="fab fa-js">Javascript</li>
+                </ul>
+                <a href="#Home" class="btn btn-primary">Demo</a>
+                <a href="#About" class="btn btn-secondary">Code</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- MiniSites Section -->
-    <section id="minisites" class="minisites-section">
+    <!-- Javascript Section -->
+    <section id="JavascriptProjects" class="javascript-section">
       <div class="container">
-        <h2>MiniSites</h2>
+        <h2>Javascript Section</h2>
         <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="minisite1.jpg" class="card-img-top" alt="MiniSite 1" />
+          <div class="col-md-4 mb-4">
+            <div class="card rounded">
+              <img
+                src="/images/beach.png"
+                class="card-img-top"
+                alt="JS Project 1"
+              />
               <div class="card-body">
-                <h5 class="card-title">MiniSite 1</h5>
-                <p class="card-text">Brief description of the mini-site.</p>
+                <h5 class="card-title">JS Project 1</h5>
+                <p class="card-text">Description</p>
+                <ul class="list-unstyled">
+                  Tools Used
+                  <li class="fas fa-code">HTML</li>
+                  <li class="fas fa-css3-alt">CSS</li>
+                  <li class="fab fa-js">Javascript</li>
+                </ul>
+                <a href="#Home" class="btn btn-primary">Demo</a>
+                <a href="#About" class="btn btn-secondary">Code</a>
               </div>
             </div>
           </div>
-          <!-- Repeat for more mini-sites -->
+          <div class="col-md-4 mb-4">
+            <div class="card rounded">
+              <img
+                src="/images/beach.png"
+                class="card-img-top"
+                alt="JS Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">JS Project 1</h5>
+                <p class="card-text">Description</p>
+                <ul class="list-unstyled">
+                  Tools Used
+                  <li class="fas fa-code">HTML</li>
+                  <li class="fas fa-css3-alt">CSS</li>
+                  <li class="fab fa-js">Javascript</li>
+                </ul>
+                <a href="#Home" class="btn btn-primary">Demo</a>
+                <a href="#About" class="btn btn-secondary">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card rounded">
+              <img
+                src="/images/beach.png"
+                class="card-img-top"
+                alt="JS Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">JS Project 1</h5>
+                <p class="card-text">Description</p>
+                <ul class="list-unstyled">
+                  Tools Used
+                  <li class="fas fa-code">HTML</li>
+                  <li class="fas fa-css3-alt">CSS</li>
+                  <li class="fab fa-js">Javascript</li>
+                </ul>
+                <a href="#Home" class="btn btn-primary">Demo</a>
+                <a href="#About" class="btn btn-secondary">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card rounded">
+              <img
+                src="/images/beach.png"
+                class="card-img-top"
+                alt="JS Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">JS Project 1</h5>
+                <p class="card-text">Description</p>
+                <ul class="list-unstyled">
+                  Tools Used
+                  <li class="fas fa-code">HTML</li>
+                  <li class="fas fa-css3-alt">CSS</li>
+                  <li class="fab fa-js">Javascript</li>
+                </ul>
+                <a href="#Home" class="btn btn-primary">Demo</a>
+                <a href="#About" class="btn btn-secondary">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card rounded">
+              <img
+                src="/images/beach.png"
+                class="card-img-top"
+                alt="JS Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">JS Project 1</h5>
+                <p class="card-text">Description</p>
+                <ul class="list-unstyled">
+                  Tools Used
+                  <li class="fas fa-code">HTML</li>
+                  <li class="fas fa-css3-alt">CSS</li>
+                  <li class="fab fa-js">Javascript</li>
+                </ul>
+                <a href="#Home" class="btn btn-primary">Demo</a>
+                <a href="#About" class="btn btn-secondary">Code</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Blog Section -->
-    <section id="blog" class="blog-section">
-      <div class="container">
-        <h2>Blog</h2>
+    <section id="Blog" class="blog-section">
+      <div class="container" id="blogContentContainer">
+        <h2>Recent Blog Articles</h2>
         <div class="row">
           <div class="col-md-4">
             <div class="card">
-              <img src="blog1.jpg" class="card-img-top" alt="Blog 1" />
+              <img src="/images/beach.png" class="card-img-top" alt="Blog 1" />
               <div class="card-body">
                 <h5 class="card-title">Blog Post 1</h5>
                 <p class="card-text">Brief description of the blog post.</p>
               </div>
             </div>
           </div>
-          <!-- Repeat for more blog posts -->
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="Contact" class="contact-section">
       <div class="container">
         <h2>Contact</h2>
         <form>
