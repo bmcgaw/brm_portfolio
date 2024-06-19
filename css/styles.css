@@ -25,6 +25,7 @@ body {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 /* Navigation */
@@ -192,7 +193,7 @@ h3 {
   height: 100vh;
   color: var(--darkblue);
   text-align: center;
-  background: url("/images/beach.png") center center / cover no-repeat;
+  background: url("/images/lajollashores2.jpg") center center / cover no-repeat;
   position: relative;
 }
 
@@ -203,7 +204,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
   z-index: 1;
 }
 
@@ -258,6 +259,8 @@ section#Home h1 {
 .home-button {
   height: 40px;
   width: 140px;
+  padding: 10px 30px;
+  text-decoration: none;
   border-radius: 5px;
   border: none;
   background-color: var(--darkblue);
@@ -269,6 +272,7 @@ section#Home h1 {
 .home-button:hover {
   background-color: var(--seafoam);
   transform: scale(1.1);
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -300,6 +304,14 @@ section#Home h1 {
   transform: scale(1.1);
 }
 
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Projects Page */
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
@@ -312,7 +324,7 @@ section#Home h1 {
 
 .projects-section {
   position: relative;
-  background: url("/images/beach.png") no-repeat center center;
+  background: url("/images/lajollashores1.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -323,7 +335,7 @@ section#Home h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 1;
 }
 
@@ -362,7 +374,7 @@ section#Home h1 {
 /* Blog Section */
 .blog-section {
   position: relative;
-  background: url("/images/beach.png") no-repeat center center;
+  background: url("/images/lajollashores3.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -373,7 +385,7 @@ section#Home h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 1;
 }
 
