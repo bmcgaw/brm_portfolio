@@ -40,3 +40,8 @@ function handleScroll() {
 }
 
 window.addEventListener("scroll", handleScroll);
+
+// Initialize AOS Animations on DOM content load
+document.addEventListener("DOMContentLoaded", () => {
+  AOS.init({ once: true });
+});

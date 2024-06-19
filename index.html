@@ -33,11 +33,19 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body>
+  <body class="bg-light">
     <!-- Top Navigation -->
-    <nav class="navbar navbar-expand-md bg-light fixed-top">
+    <nav
+      class="navbar navbar-expand-md bg-light fixed-top"
+      data-aos="flip-down"
+      data-aos-duration="1200"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" id="brand" href="#">BRM</a>
         <a class="linkedin-github" href="https://linkedin.com/in/brian-mcgaw">
@@ -88,6 +96,8 @@
     <nav
       class="d-flex flex-column justify-content-center align-items-center bg-light"
       id="sidebarNav"
+      data-aos="slide-down"
+      data-aos-duration="1200"
     >
       <a class="navbar-brand nav-link" id="verticalBrand" href="#">BRM</a>
       <a class="nav-link sidebar-link" href="#Home"
@@ -115,12 +125,16 @@
       <div class="container" id="homeContentContainer">
         <div
           class="name d-flex flex-column justify-content-center align-items-center"
+          data-aos="fade-down"
+          data-aos-duration="1200"
         >
           <span class="first-name">BRIAN</span>
           <span class="last-name">McGAW</span>
         </div>
-        <h1 class="mb-3">Software Developer</h1>
-        <div class="home-content">
+        <h1 class="mb-3" data-aos="fade-left" data-aos-duration="1200">
+          Software Developer
+        </h1>
+        <div class="home-content" data-aos="fade-up" data-aos-duration="1200">
           <p class="mb-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quis
             delectus, nobis soluta sed iusto iure ipsam, praesentium sunt as.
@@ -128,7 +142,11 @@
           <button class="home-button">Download CV</button>
         </div>
       </div>
-      <div class="social-links d-none">
+      <div
+        class="social-links d-none"
+        data-aos="fade-left"
+        data-aos-duration="1200"
+      >
         <a class="linkedin-github" href="https://linkedin.com/in/brian-mcgaw">
           <i class="bi bi-linkedin"></i>
         </a>
@@ -141,13 +159,19 @@
     <!-- About Section -->
     <section id="About" class="about-section">
       <div class="container">
-        <h2>About Me</h2>
-        <p class="about-me">
+        <h2 data-aos="fade-right" data-aos-duration="700">About Me</h2>
+        <p class="about-me" data-aos="fade-left" data-aos-duration="700">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
           odio. Praesent libero. Sed cursus ante dapibus diam.
         </p>
-        <h3 class="mt-5 mb-4">Skills</h3>
-        <ul class="list-inline d-flex flex-wrap gap-5 fs-4">
+        <h3 class="mt-5 mb-4" data-aos="fade-right" data-aos-duration="700">
+          Skills
+        </h3>
+        <ul
+          class="list-inline d-flex flex-wrap gap-5 fs-4"
+          data-aos="fade-left"
+          data-aos-duration="700"
+        >
           <li class="list-inline-item">
             <i class="devicon devicon-html5-plain"></i> HTML
           </li>
@@ -182,8 +206,8 @@
     <!-- Projects Section -->
     <section id="Projects" class="projects-section">
       <div class="container" id="projectsContentContainer">
-        <h2>.NET Projects</h2>
-        <div class="row">
+        <h2 data-aos="fade-right" data-aos-duration="700">.NET Projects</h2>
+        <div class="row" data-aos="fade-left" data-aos-duration="700">
           <div class="col-md-4 mb-4">
             <div class="card rounded">
               <img
@@ -254,8 +278,10 @@
     <!-- Javascript Section -->
     <section id="JavascriptProjects" class="javascript-section">
       <div class="container">
-        <h2>Javascript Section</h2>
-        <div class="row">
+        <h2 data-aos="fade-right" data-aos-duration="700">
+          Javascript Section
+        </h2>
+        <div class="row" data-aos="fade-left" data-aos-duration="700">
           <div class="col-md-4 mb-4">
             <div class="card rounded">
               <img
@@ -368,8 +394,10 @@
     <!-- Blog Section -->
     <section id="Blog" class="blog-section">
       <div class="container" id="blogContentContainer">
-        <h2>Recent Blog Articles</h2>
-        <div class="row">
+        <h2 data-aos="fade-right" data-aos-duration="700">
+          Recent Blog Articles
+        </h2>
+        <div class="row" data-aos="fade-left" data-aos-duration="700">
           <div class="col-md-4">
             <div class="card">
               <img src="/images/beach.png" class="card-img-top" alt="Blog 1" />
@@ -386,8 +414,8 @@
     <!-- Contact Section -->
     <section id="Contact" class="contact-section">
       <div class="container">
-        <h2>Contact</h2>
-        <form>
+        <h2 data-aos="fade-right" data-aos-duration="700">Contact</h2>
+        <form data-aos="fade-left" data-aos-duration="700">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" required />
@@ -422,6 +450,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>

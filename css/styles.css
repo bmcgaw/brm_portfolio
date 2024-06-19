@@ -133,13 +133,13 @@ body {
   }
 
   #sidebarNav {
+    display: block;
     position: fixed;
     z-index: 9999;
     top: 0;
     width: 80px;
     height: 100vh;
     box-shadow: 4px 0 14px -2px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
   }
 }
 
