@@ -103,19 +103,19 @@
       <a class="nav-link sidebar-link" href="#Home"
         ><i class="bi bi-house-door-fill Home"></i
       ></a>
-      <a class="nav-link sidebar-link" href="About"
+      <a class="nav-link sidebar-link" href="#About"
         ><i class="bi bi-tools About"></i
       ></a>
-      <a class="nav-link sidebar-link" href="Projects"
+      <a class="nav-link sidebar-link" href="#Projects"
         ><i class="bi bi-folder-fill Projects"></i
       ></a>
-      <a class="nav-link sidebar-link" href="JavascriptProjects"
+      <a class="nav-link sidebar-link" href="#JavascriptProjects"
         ><i class="bi bi-globe JavascriptProjects"></i
       ></a>
-      <a class="nav-link sidebar-link" href="Blog"
+      <a class="nav-link sidebar-link" href="#Blog"
         ><i class="bi bi-book-fill Blog"></i
       ></a>
-      <a class="nav-link sidebar-link" href="Contact"
+      <a class="nav-link sidebar-link" href="#Contact"
         ><i class="bi bi-envelope-fill Contact"></i
       ></a>
     </nav>
@@ -430,20 +430,40 @@
     <!-- Contact Section -->
     <section id="Contact" class="contact-section">
       <div class="container">
-        <h2 data-aos="fade-left" data-aos-duration="700">Contact</h2>
-        <form data-aos="fade-right" data-aos-duration="700">
+        <h2 data-aos="fade-left" data-aos-duration="700">Contact Me</h2>
+        <form
+          name="message-form"
+          action="https://formspree.io/f/xblrrrog"
+          method="post"
+          data-aos="fade-right"
+          data-aos-duration="700"
+          autocomplete="off"
+        >
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" required />
+            <input
+              name="Name"
+              type="text"
+              class="form-control"
+              id="name"
+              required
+            />
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required />
+            <input
+              name="Email"
+              type="email"
+              class="form-control"
+              id="email"
+              required
+            />
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Message</label>
             <textarea
               class="form-control"
+              name="Message"
               id="message"
               rows="4"
               required
