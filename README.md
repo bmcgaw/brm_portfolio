@@ -2,7 +2,6 @@
 
 Welcome to my development portfolio!
 ![Web Dev Portfolio Screenshot Fullscreen](images/homepage.png)
-![Web Dev Portfolio Screenshot Mobile](images/homepagemobile.png)
 
 ## Table of Contents
 
