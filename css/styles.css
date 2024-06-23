@@ -73,14 +73,12 @@ body {
 
 .navbar-toggler-icon:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(58,175,169,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  color: var(--seafoam);
   transform: scale(1.1);
 }
 
 .active-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(58,175,169,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   transform: rotate(90deg);
-  transition: transform 0.3s ease;
 }
 
 .navbar-toggler:focus {
@@ -145,6 +143,7 @@ body {
 }
 
 /* All Sections */
+.hero-section,
 .about-section,
 .projects-section,
 .javascript-section,
@@ -152,6 +151,7 @@ body {
 .contact-section {
   padding: 60px 0;
   background: var(--white);
+  overflow: hidden;
 }
 
 .about-section h2,
@@ -160,8 +160,7 @@ body {
 .blog-section h2,
 .contact-section h2 {
   color: var(--seafoam);
-  margin-bottom: 40px;
-  margin-top: 20px;
+  margin: 20px 0 40px;
 }
 
 p {
@@ -218,30 +217,19 @@ h3 {
 
 .name {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 100;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
 }
 
-.first-name {
-  font-size: 3.5rem;
-  font-weight: 100;
-  color: var(--seafoam);
-}
-
+.first-name,
 .last-name {
   font-size: 3.5rem;
-  font-weight: 200;
+  font-weight: 100;
   color: var(--seafoam);
 }
 
 section#Home h1 {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
 }
 
 .linkedin-github {
@@ -257,15 +245,17 @@ section#Home h1 {
 }
 
 .home-button {
+  display: inline-block;
   height: 40px;
-  width: 140px;
-  padding: 10px 30px;
+  width: 220px;
+  padding-top: 4px;
   text-decoration: none;
   border-radius: 5px;
   border: none;
   background-color: var(--darkblue);
   color: white;
   font-size: 20px;
+  text-align: center;
   transition: background-color 0.3s, transform 0.3s;
 }
 
