@@ -100,22 +100,52 @@
       data-aos-duration="1200"
     >
       <a class="navbar-brand nav-link" id="verticalBrand" href="#">BRM</a>
-      <a class="nav-link sidebar-link" href="#Home"
+      <a
+        class="nav-link sidebar-link"
+        href="#Home"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        title="Home"
         ><i class="bi bi-house-door-fill Home"></i
       ></a>
-      <a class="nav-link sidebar-link" href="#About"
+      <a
+        class="nav-link sidebar-link"
+        href="#About"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        title="About Me"
         ><i class="bi bi-tools About"></i
       ></a>
-      <a class="nav-link sidebar-link" href="#Projects"
+      <a
+        class="nav-link sidebar-link"
+        href="#Projects"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        title=".NET Projects"
         ><i class="bi bi-folder-fill Projects"></i
       ></a>
-      <a class="nav-link sidebar-link" href="#JavascriptProjects"
+      <a
+        class="nav-link sidebar-link"
+        href="#JavascriptProjects"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        title="Javascript Projects"
         ><i class="bi bi-globe JavascriptProjects"></i
       ></a>
-      <a class="nav-link sidebar-link" href="#Blog"
+      <a
+        class="nav-link sidebar-link"
+        href="#Blog"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        title="Blog"
         ><i class="bi bi-book-fill Blog"></i
       ></a>
-      <a class="nav-link sidebar-link" href="#Contact"
+      <a
+        class="nav-link sidebar-link"
+        href="#Contact"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        title="Contact Me"
         ><i class="bi bi-envelope-fill Contact"></i
       ></a>
     </nav>
@@ -213,7 +243,7 @@
             <i class="devicon devicon-azuresqldatabase-plain"></i> SQL
           </li>
           <li class="list-inline-item">
-            <i class="devicon devicon-github-original"></i> GitHub
+            <i class="devicon devicon-github-original"></i> Git
           </li>
         </ul>
       </div>
@@ -227,21 +257,51 @@
           <div class="col-md-4 mb-4">
             <div class="card rounded">
               <img
-                src="/images/beach.png"
+                src="/images/devbooklogo.jpg"
                 class="card-img-top"
-                alt="Project 1"
+                alt="DevBook"
               />
               <div class="card-body">
-                <h5 class="card-title">Project 1</h5>
-                <p class="card-text">Description</p>
-                <ul class="list-unstyled">
-                  Tools Used
-                  <li class="fas fa-code">HTML</li>
-                  <li class="fas fa-css3-alt">CSS</li>
-                  <li class="fab fa-js">Javascript</li>
+                <h4 class="card-title">DevBook Development Blog</h4>
+                <hr />
+                <p class="card-text">
+                  A professional, full-stack personal software development blog
+                  to write about the things I'm learning and working with.
+                  Complete with authentication, authorization and commenting
+                  functionality.
+                </p>
+                <ul class="list-unstyled d-flex gap-2">
+                  <li class="list-item">
+                    <i
+                      class="devicon-dotnetcore-plain colored dotnet-proj-devi"
+                    ></i>
+                  </li>
+                  <li class="list-item">
+                    <i
+                      class="devicon-csharp-plain colored dotnet-proj-devi"
+                    ></i>
+                  </li>
+                  <li class="list-item">
+                    <i
+                      class="devicon-bootstrap-plain colored dotnet-proj-devi"
+                    ></i>
+                  </li>
+                  <li class="list-item">
+                    <i
+                      class="devicon-azuresqldatabase-plain colored dotnet-proj-devi"
+                    ></i>
+                  </li>
                 </ul>
-                <a href="#Home" class="btn btn-primary">Demo</a>
-                <a href="#About" class="btn btn-secondary">Code</a>
+                <a
+                  href="https://devbook.azurewebsites.net"
+                  class="btn btn-primary"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/bmcgaw/DevBookBlog"
+                  class="btn btn-secondary"
+                  >Code</a
+                >
               </div>
             </div>
           </div>
@@ -413,17 +473,12 @@
         <h2 data-aos="fade-left" data-aos-duration="700">
           Recent Blog Articles
         </h2>
-        <div class="row" data-aos="fade-right" data-aos-duration="700">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="/images/beach.png" class="card-img-top" alt="Blog 1" />
-              <div class="card-body">
-                <h5 class="card-title">Blog Post 1</h5>
-                <p class="card-text">Brief description of the blog post.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div
+          id="blogArticles"
+          class="row"
+          data-aos="fade-right"
+          data-aos-duration="700"
+        ></div>
       </div>
     </section>
 
@@ -488,5 +543,6 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/api.js"></script>
   </body>
 </html>
