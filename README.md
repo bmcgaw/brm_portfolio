@@ -28,9 +28,9 @@ Here are a few of the technologies and tools I use on a regular basis:
 
 Feel free to reach out. You can contact me through the following channels.
 
-- **Email**:
-- **LinkedIn**:
-- **GitHub**:
+- **Email**: bmcgaw91@gmail.com
+- **LinkedIn**: https://linkedin.com/in/brian-mcgaw
+- **GitHub**: https://github.com/bmcgaw
 
 ## Site Overview
 
@@ -38,7 +38,7 @@ This site was built from scratch with HTML, CSS, Javascript, Bootstrap and sever
 
 The About Me section displays the tools I use regularly to do my work.
 
-I have included two pages for projects, one for full-stack .NET applications and another for Javascript focused projects. To view the source code for any of the listed projects click the "Code" button on the project card. To live-demo the project click the "Demo" button on the project card.
+I have included two pages for projects, one for full-stack .NET applications and another for Javascript focused projects. To view the source code for any of the listed projects click the "Code" button on the project card. To live-demo the project click the "Live" button on the project card.
 
 My blog displays articles I have written about about web development and the tools and technologies I most enjoy using.
 
