@@ -155,11 +155,15 @@ body {
 }
 
 .about-section h2,
-.projects-section h2,
 .javascript-section h2,
-.blog-section h2,
 .contact-section h2 {
   color: var(--seafoam);
+  margin: 20px 0 40px;
+}
+
+.projects-section h2,
+.blog-section h2 {
+  color: var(--darkblue);
   margin: 20px 0 40px;
 }
 
