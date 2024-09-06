@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const card = document.createElement("div");
         card.classList.add("card");
+        card.classList.add("mb-4");
+        card.classList.add("shadow");
         wrapper.append(card);
 
         const cardBody = document.createElement("div");
